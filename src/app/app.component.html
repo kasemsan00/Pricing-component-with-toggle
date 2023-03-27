@@ -3,8 +3,19 @@
   <div class="time-plan">
     <span>Annually</span>
     <input type="checkbox" />
+    <input type="checkbox" />
     <span>Monthly</span>
   </div>
-  <app-card />
+  <div class="plan-list">
+    <div class="card" *ngFor="let plan of planData">
+      <app-card
+        [title]="plan.title"
+        [price]="plan.price"
+        [storage]="plan.storage"
+        [user]="plan.user"
+        [bandwidth]="plan.bandwidth"
+      />
+    </div>
+  </div>
 </div>
 <router-outlet></router-outlet>

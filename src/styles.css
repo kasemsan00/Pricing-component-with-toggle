@@ -1,10 +1,13 @@
 :root {
+  --Linear-Gradient-1: hsl(236, 72%, 79%);
+  --Linear-Gradient-2: hsl(237, 63%, 64%);
   --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
   --Light-Grayish-Blue: hsl(234, 14%, 74%);
   --Grayish-Blue: hsl(233, 13%, 49%);
   --Dark-Grayish-Blue: hsl(232, 13%, 33%);
 }
 body {
+  background-color: var(--Very-Light-Grayish-Blue);
   margin: 0;
 }
 @font-face {
@@ -15,7 +18,6 @@ body {
 * {
   font-family: Montserrat, serif;
   font-size: 15px;
-  font-weight: bold;
 }
 .main {
   height: 100vh;
@@ -25,6 +27,14 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+.card {
+  background-image: linear-gradient(
+    var(--Linear-Gradient-1),
+    var(--Linear-Gradient-2)
+  );
+  padding: 40px 30px;
+  border-radius: 10px;
 }
 .title {
   font-size: 22px;
@@ -38,4 +48,62 @@ body {
 .time-plan > span {
   font-weight: bold;
   color: var(--Light-Grayish-Blue);
+}
+.plan-list {
+  display: flex;
+  flex-direction: row;
+}
+.plan-title {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.plan-price {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.plan-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+.plan-detail > span {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: solid 1px var(--Light-Grayish-Blue);
+  border-bottom: solid 1px var(--Light-Grayish-Blue);
+  margin-bottom: -1px;
+}
+.learn-more-button {
+  color: var(--Linear-Gradient-2);
+  background-color: white;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.learn-more-button:hover {
+  color: white;
+  background-color: var(--Linear-Gradient-2);
+  outline: solid 1px white;
 }
