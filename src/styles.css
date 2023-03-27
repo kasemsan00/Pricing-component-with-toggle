@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(/assets/fonts/Montserrat-Medium.ttf) format("truetype");
+}
+* {
+  font-family: Montserrat, serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.main {
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--Grayish-Blue);
+}
+.time-plan {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.time-plan > span {
+  font-weight: bold;
+  color: var(--Light-Grayish-Blue);
+}
