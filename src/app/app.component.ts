@@ -14,6 +14,7 @@ export class AppComponent {
       storage: '500 GB Storage',
       user: '2 Users Allowed',
       bandwidth: 'Send up to 3 GB',
+      primary: false,
     },
     {
       title: 'Professional',
@@ -21,6 +22,7 @@ export class AppComponent {
       storage: '1 TB Storage',
       user: '5 Users Allowed',
       bandwidth: 'Send up to 10 GB',
+      primary: true,
     },
     {
       title: 'Master',
@@ -28,6 +30,7 @@ export class AppComponent {
       storage: '2 TB Storage',
       user: '10 Users Allowed',
       bandwidth: 'Send up to 20 GB',
+      primary: false,
     },
   ];
 }

@@ -29,12 +29,18 @@ body {
   align-content: center;
 }
 .card {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+.card-primary {
   background-image: linear-gradient(
     var(--Linear-Gradient-1),
     var(--Linear-Gradient-2)
   );
-  padding: 40px 30px;
-  border-radius: 10px;
+}
+.text-primary {
+  color: white;
 }
 .title {
   font-size: 22px;
@@ -55,13 +61,11 @@ body {
 }
 .plan-title {
   font-size: 18px;
-  color: white;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 .plan-price {
-  color: white;
   text-align: center;
   font-size: 70px;
   font-weight: bold;
@@ -73,7 +77,6 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center;
-  color: white;
   margin-bottom: 30px;
 }
 .plan-detail > span {

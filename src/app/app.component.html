@@ -7,13 +7,17 @@
     <span>Monthly</span>
   </div>
   <div class="plan-list">
-    <div class="card" *ngFor="let plan of planData">
+    <div
+      [ngClass]="['card', plan.primary ? 'card-primary' : '']"
+      *ngFor="let plan of planData"
+    >
       <app-card
         [title]="plan.title"
         [price]="plan.price"
         [storage]="plan.storage"
         [user]="plan.user"
         [bandwidth]="plan.bandwidth"
+        [primary]="plan.primary"
       />
     </div>
   </div>

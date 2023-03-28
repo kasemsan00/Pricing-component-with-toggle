@@ -1,4 +1,6 @@
-<div class="plan-title">{{ title }}</div>
+<div [ngClass]="['plan-title', primary ? 'text-primary' : 'xx']">
+  {{ title }}
+</div>
 <div class="plan-price">{{ price }}</div>
 <div class="plan-detail">
   <span>{{ storage }}</span>

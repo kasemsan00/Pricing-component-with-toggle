@@ -11,4 +11,5 @@ export class CardComponent {
   @Input() storage: string | undefined;
   @Input() user: string | undefined;
   @Input() bandwidth: string | undefined;
+  @Input() primary: boolean | undefined;
 }
