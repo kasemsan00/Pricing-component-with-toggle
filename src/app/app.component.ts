@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Pricing-component-with-toggle';
-  planType = 'annually';
+  planType = true;
   planData = [
     {
       title: 'Basic',
-      price: '19.99',
+      price: 19.9999,
       storage: '500 GB Storage',
       user: '2 Users Allowed',
       bandwidth: 'Send up to 3 GB',
@@ -19,7 +19,7 @@ export class AppComponent {
     },
     {
       title: 'Professional',
-      price: '24.99',
+      price: 24.9999,
       storage: '1 TB Storage',
       user: '5 Users Allowed',
       bandwidth: 'Send up to 10 GB',
@@ -27,19 +27,14 @@ export class AppComponent {
     },
     {
       title: 'Master',
-      price: '39.99',
+      price: 39.9999,
       storage: '2 TB Storage',
       user: '10 Users Allowed',
       bandwidth: 'Send up to 20 GB',
       primary: false,
     },
   ];
-  planTypeChange = (event: any) => {
-    if (event) {
-      this.planType = 'annually';
-    }
-    if (!event) {
-      this.planType = 'monthly';
-    }
+  planTypeChange = (event: boolean) => {
+    this.planType = event;
   };
 }

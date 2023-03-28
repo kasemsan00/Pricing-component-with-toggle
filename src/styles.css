@@ -194,3 +194,25 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+@media only screen and (max-width: 600px) {
+  .main {
+    height: 110%;
+  }
+  .title {
+    margin-top: 50px;
+  }
+  .plan-list {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 0;
+  }
+  .card-primary {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

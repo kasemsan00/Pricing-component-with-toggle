@@ -2,9 +2,8 @@
   {{ title }}
 </div>
 <div [ngClass]="['plan-price', primary ? 'text-primary' : '']">
-  ${{ price }}
+  ${{ resultPrice }}
 </div>
-{{ planType }}
 <div [ngClass]="['plan-detail', primary ? 'text-primary' : '']">
   <span>{{ storage }}</span>
   <span>{{ user }}</span>
