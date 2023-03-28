@@ -12,4 +12,5 @@ export class CardComponent {
   @Input() user: string | undefined;
   @Input() bandwidth: string | undefined;
   @Input() primary: boolean | undefined;
+  @Input() planType: string | undefined;
 }

@@ -2,8 +2,14 @@
   <span class="title">Our Pricing</span>
   <div class="time-plan">
     <span>Annually</span>
-    <input type="checkbox" />
-    <input type="checkbox" />
+    <label class="switch">
+      <input
+        type="checkbox"
+        [(ngModel)]="planType"
+        (ngModelChange)="planTypeChange($event)"
+      />
+      <span class="slider round"></span>
+    </label>
     <span>Monthly</span>
   </div>
   <div class="plan-list">
@@ -18,8 +24,8 @@
         [user]="plan.user"
         [bandwidth]="plan.bandwidth"
         [primary]="plan.primary"
+        [planType]="planType"
       />
     </div>
   </div>
 </div>
-<router-outlet></router-outlet>
